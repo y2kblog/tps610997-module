@@ -1,0 +1,215 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TPS610997_Module-rescue:CONN_01X04-conn P1
+U 1 1 5A915D8C
+P 850 1450
+F 0 "P1" H 850 1700 50  0000 C CNN
+F 1 "PinHeader" H 850 1800 50  0000 C CNN
+F 2 "user:USER_SIL-4_NoSilk" H 850 1450 50  0001 C CNN
+F 3 "" H 850 1450 50  0000 C CNN
+	1    850  1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1250 2250 1250
+Wire Wire Line
+	1600 1400 1800 1400
+$Comp
+L Device:L_Small L1
+U 1 1 5A9168A1
+P 2100 1250
+F 0 "L1" V 2250 1250 40  0000 C CNN
+F 1 "1u" V 2175 1250 40  0000 C CNN
+F 2 "Inductors_SMD:L_0805" H 2100 1250 50  0001 C CNN
+F 3 "" H 2100 1250 50  0000 C CNN
+F 4 "LQM21PN1R0MGHL" H 2100 1250 60  0001 C CNN "manf#"
+	1    2100 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5A916F1B
+P 1800 1700
+F 0 "C1" H 1810 1770 50  0000 L CNN
+F 1 "10u" H 1810 1620 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1800 1700 50  0001 C CNN
+F 3 "" H 1800 1700 50  0000 C CNN
+F 4 "2014210A" H 1800 1700 60  0001 C CNN "Elecrow PN"
+	1    1800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5A9172CB
+P 2200 1700
+F 0 "R1" H 2250 1750 50  0000 L CNN
+F 1 "10M" H 2250 1650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" H 2200 1700 50  0001 C CNN
+F 3 "" H 2200 1700 50  0000 C CNN
+F 4 "C7250" H 2200 1700 60  0001 C CNN "Elecrow PN"
+	1    2200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5A9176C3
+P 2200 1850
+F 0 "#PWR01" H 2200 1600 50  0001 C CNN
+F 1 "GND" H 2200 1700 50  0000 C CNN
+F 2 "" H 2200 1850 50  0000 C CNN
+F 3 "" H 2200 1850 50  0000 C CNN
+	1    2200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1850 2200 1800
+Wire Wire Line
+	2200 1600 2200 1550
+Wire Wire Line
+	2000 1550 2200 1550
+Text Label 2050 1550 0    45   ~ 0
+EN
+Connection ~ 2200 1550
+$Comp
+L power:GND #PWR02
+U 1 1 5A9180E2
+P 1800 1850
+F 0 "#PWR02" H 1800 1600 50  0001 C CNN
+F 1 "GND" H 1800 1700 50  0000 C CNN
+F 2 "" H 1800 1850 50  0000 C CNN
+F 3 "" H 1800 1850 50  0000 C CNN
+	1    1800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1850 1800 1800
+Wire Wire Line
+	1800 1600 1800 1400
+Connection ~ 1800 1400
+Text Label 1650 1400 0    45   ~ 0
+Vin
+Wire Wire Line
+	2000 1250 1950 1250
+Wire Wire Line
+	1950 1250 1950 1400
+Connection ~ 1950 1400
+$Comp
+L Device:C_Small C2
+U 1 1 5A918808
+P 3400 1700
+F 0 "C2" H 3410 1770 50  0000 L CNN
+F 1 "22u" H 3410 1620 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3400 1700 50  0001 C CNN
+F 3 "" H 3400 1700 50  0000 C CNN
+F 4 "C45783" H 3400 1700 60  0001 C CNN "Elecrow PN"
+	1    3400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1250 3400 1250
+Wire Wire Line
+	3400 1250 3400 1600
+$Comp
+L power:GND #PWR03
+U 1 1 5A918ABB
+P 3400 1850
+F 0 "#PWR03" H 3400 1600 50  0001 C CNN
+F 1 "GND" H 3400 1700 50  0000 C CNN
+F 2 "" H 3400 1850 50  0000 C CNN
+F 3 "" H 3400 1850 50  0000 C CNN
+	1    3400 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1850 3400 1800
+Text Label 3450 1250 0    45   ~ 0
+Vout
+Connection ~ 3400 1250
+Text Label 1100 1300 0    45   ~ 0
+Vin
+Text Label 1100 1500 0    45   ~ 0
+Vout
+Text Label 1100 1600 0    45   ~ 0
+EN
+Wire Wire Line
+	1050 1600 1250 1600
+Wire Wire Line
+	1050 1500 1250 1500
+Wire Wire Line
+	1050 1300 1250 1300
+$Comp
+L power:GND #PWR04
+U 1 1 5A91934D
+P 1250 1400
+F 0 "#PWR04" H 1250 1150 50  0001 C CNN
+F 1 "GND" V 1250 1200 50  0001 C CNN
+F 2 "" H 1250 1400 50  0000 C CNN
+F 3 "" H 1250 1400 50  0000 C CNN
+	1    1250 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 1400 1050 1400
+Text Notes 650  1525 0    45   ~ 0
+5V
+Text Notes 650  1625 0    45   ~ 0
+EN
+Text Notes 650  1425 0    45   ~ 0
+GND
+Text Notes 650  1325 0    45   ~ 0
+Vin
+$Comp
+L TPS610997_Module-rescue:TPS61099x_WCSP U1
+U 1 1 5A91B0F1
+P 2650 1400
+F 0 "U1" H 2450 1150 40  0000 C CNN
+F 1 "TPS61099x_WCSP" H 2650 1700 40  0000 C CNN
+F 2 "user:USER_Boost_TPS61099x_WCSP" H 2650 1600 30  0001 C CIN
+F 3 "" H 2650 1500 60  0000 C CNN
+F 4 "TPS610997YFFR" H 2650 1400 60  0001 C CNN "manf#"
+	1    2650 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5A91B587
+P 3150 1850
+F 0 "#PWR05" H 3150 1600 50  0001 C CNN
+F 1 "GND" H 3150 1700 50  0000 C CNN
+F 2 "" H 3150 1850 50  0000 C CNN
+F 3 "" H 3150 1850 50  0000 C CNN
+	1    3150 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1400 3150 1550
+Wire Wire Line
+	3150 1550 3050 1550
+Wire Wire Line
+	3150 1400 3050 1400
+Connection ~ 3150 1550
+Wire Wire Line
+	2200 1550 2250 1550
+Wire Wire Line
+	1800 1400 1950 1400
+Wire Wire Line
+	1950 1400 2250 1400
+Wire Wire Line
+	3400 1250 3600 1250
+Wire Wire Line
+	3150 1550 3150 1850
+$EndSCHEMATC
