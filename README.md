@@ -1,12 +1,6 @@
-# tps610997-module
-超低消費電力の5V出力昇圧型DC-DCコンバータ TPS610997 を搭載したモジュール
-
-
 # TPS610997 超低消費電力 5V出力昇圧モジュール
 
-
 <img src="/img/ProductImage_BothSide.jpg" width="350px">
-
 
 ## 概要
 
