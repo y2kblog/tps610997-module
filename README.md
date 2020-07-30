@@ -37,7 +37,7 @@ TPS610997の**静止電流は約1μA程度**と非常に低く、また**0.7Vか
 <img src="/img/InputVoltage_LoadCurrent.png" width="500px">
 
 ## データシート  
-[TPS61099データシート(日本語)](https://www.tij.co.jp/lit/ds/symlink/tps61099.pdf)
+[TPS61099xデータシート(日本語)](https://www.tij.co.jp/lit/ds/symlink/tps61099.pdf)
 
 ## License
 MIT License
